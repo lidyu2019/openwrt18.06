@@ -53,7 +53,7 @@ jobs:
         run: |
            rm    -rfv  package/lean/autocore
            cd package/diy
-           git clone  https://github.com/Lienol/openwrt-package
+           git clone  https://github.com/Sweet-Fairy/openwrt-package
            git clone  https://github.com/Sweet-Fairy/luci-app-ssr-plus-Jo
            git clone -b lean  https://github.com/Sweet-Fairy/luci-app-ssr-plus-Jo package/luci-app-ssr-plus-lean    
            git clone  https://github.com/Leo-Jo-My/luci-app-vssr
@@ -185,7 +185,7 @@ jobs:
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
            cat >> .config <<EOF
           # CONFIG_TARGET_IMAGES_PAD is not set
-           CONFIG_VMDK_IMAGES is not set
+          # CONFIG_VMDK_IMAGES is not set
           EOF
           # 
           # ========================固件定制部分结束========================
